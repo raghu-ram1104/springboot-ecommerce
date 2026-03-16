@@ -19,4 +19,12 @@ public class ProductService {
 	{
 		return r.findAll();
 	}
+	
+	public void set3(int id) {
+		r.deleteById(id);
+	}
+	
+	public Optional<Product> set4(int id){
+		return r.findById(id);
+	}
 }
