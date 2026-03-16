@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+.product-container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:20px;
+}
+
+.product-card{
+border:1px solid #ccc;
+padding:20px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.add-btn{
+background-color:#28a745;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.add-btn:hover{
+background-color:#218838;
+}

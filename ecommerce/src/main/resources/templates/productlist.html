@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<link rel="stylesheet" th:href="@{/css/syle.css}">
+</head>
+
+<body>
+
+<div class="product-container">
+
+<div th:each="p : ${products}" class="product-card">
+
+<h3 th:text="${p.pname}"></h3>
+<p>₹ <span th:text="${p.price}"></span></p>
+
+<form action="/addtocart" method="post">
+<input type="hidden" name="id" th:value="${p.id}">
+<button type="submit" class="add-btn">Add To Cart</button>
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -2,14 +2,74 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Add Product</title>
 </head>
+
 <body>
+<style>body{
+font-family:Arial;
+background-color:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.form-container{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+width:300px;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+input[type=text]{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+input[type=submit]{
+width:100%;
+padding:10px;
+background-color:#007bff;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+input[type=submit]:hover{
+background-color:#0056b3;
+}</style>
+<div class="form-container">
+
+<h2>Add Product</h2>
+
 <form action="abc" method="post">
-<input type="text" name="pname"><br><br>
-<input type="text" name="quantity"><br><br>
-<input type="text" name="price"><br><br>
-<input type="submit">
+
+<label>Product Name</label>
+<input type="text" name="pname">
+
+<label>Quantity</label>
+<input type="text" name="quantity">
+
+<label>Price</label>
+<input type="text" name="price">
+
+<br><br>
+<input type="submit" value="Save Product">
+
 </form>
+
+</div>
+
 </body>
 </html>
