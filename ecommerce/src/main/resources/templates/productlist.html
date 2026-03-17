@@ -14,7 +14,7 @@
 
 <h3 th:text="${p.pname}"></h3>
 <p>₹ <span th:text="${p.price}"></span></p>
-
+<img th:src="${p.image}" height="250px" width="250px">
 <form action="/addtocart" method="post">
 <input type="hidden" name="id" th:value="${p.id}">
 <button type="submit" class="add-btn">Add To Cart</button>
